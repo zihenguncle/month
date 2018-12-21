@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CarActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/car_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear"
+        ></android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <CheckBox
+            android:id="@+id/car_checkedall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选/反选"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/car_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总价:"
+            android:textSize="20sp"
+            android:textColor="#f00"
+            android:layout_marginLeft="20dp"
+            />
+        <Button
+            android:id="@+id/car_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:background="#f00"
+            android:textColor="#fff"
+            android:text="去结算"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/thing_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="54dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="6dp" />
+
+    <ImageView
+        android:id="@+id/thing_image"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/thing_checked"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginBottom="-43dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/thing_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/thing_image"
+        android:layout_toRightOf="@+id/thing_image"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/thing_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="93dp"
+        android:layout_toEndOf="@+id/thing_image"
+        android:layout_toRightOf="@+id/thing_image"
+        android:textColor="#f00"
+        android:text="TextView" />
+
+    <jx.com.monthtwo.custom.NumView
+        android:id="@+id/numview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="90dp"></jx.com.monthtwo.custom.NumView>
+</RelativeLayout>
